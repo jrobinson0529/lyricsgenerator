@@ -1,3 +1,4 @@
+import loadingSpinner from '../components/loadingSpinner';
 import showLyrics from '../components/showLyrics';
 import getSong from './getSong';
 
@@ -11,8 +12,10 @@ const domEvents = () => {
         artist,
         song,
       };
+      $('#search-form-submit').html(loadingSpinner);
       getSong(song, artist).then((response) => {
         showLyrics(response.lyrics, input);
+        $('#search-form-submit').html('Submit');
       });
     }
   });
