@@ -2,8 +2,35 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: black;
+  color: #eeeeee;
   text-align: center;
   margin-top: 100px;
+}
+.search-form-container {
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  padding: 40px;
+  color: black;
+  width: 35%;
+  height: auto;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  .form-title {
+    margin-bottom: 50px;
+  }
+  .search-form {
+    width: 75%;
+  }
+  label {
+    font-weight: 600;
+  }
+}
+.lyrics-container {
+  white-space: pre-line;
+  margin-top: 50px;
+  font-weight: 500;
+  text-align: justify;
+  width: 40%;
 }

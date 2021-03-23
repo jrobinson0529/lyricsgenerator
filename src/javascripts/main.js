@@ -3,10 +3,14 @@
 import 'bootstrap'; // import bootstrap elements and js
 
 import '../styles/main.scss';
+import domBuilder from './components/domBuilder';
+import searchForm from './components/searchForm';
+import domEvents from './helpers/domEvents';
 
 const init = () => {
-  document.querySelector('#app').innerHTML = '<h1>HELLO! You are up and running!</h1>';
-  console.warn('YOU ARE UP AND RUNNING!');
+  domBuilder();
+  searchForm();
+  domEvents();
 };
 
 init();
